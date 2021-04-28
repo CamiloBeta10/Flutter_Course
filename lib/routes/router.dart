@@ -5,6 +5,7 @@ import 'package:fluttergram/screen/root/root_view.dart';
 import 'package:fluttergram/screen/walkthrough/walkthrough_view.dart';
 import 'package:fluttergram/screen/home/home_view.dart';
 import 'package:fluttergram/screen/auth/auth_view.dart';
+import 'package:fluttergram/screen/chat/chat_view.dart';
 
 class UIRouter {
   static String initialRoute = RootScreen.route;
@@ -30,6 +31,10 @@ class UIRouter {
       ProfileScreen.route: MaterialPageRoute<dynamic>(
         settings: RouteSettings(name: ProfileScreen.route),
         builder: (_) => ProfileScreen(),
+      ),
+      ChatScreen.route: MaterialPageRoute<dynamic>(
+        settings: RouteSettings(name: ChatScreen.route),
+        builder: (_) => ChatScreen(),
       ),
     };
 
